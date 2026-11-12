@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website for Hair Vendors in Nigeria | WebCraft Nigeria</title>
+<meta name="description" content="A custom website for your hair or wig business — showcase bundles by length, take orders on WhatsApp, and look as premium as your products.">
+<link rel="canonical" href="https://happinessisfreee.online/website-for-hair-vendors.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="WebCraft Nigeria">
+<meta property="og:title" content="Website for Hair Vendors in Nigeria | WebCraft Nigeria">
+<meta property="og:description" content="A custom website for your hair or wig business — showcase bundles by length, take orders on WhatsApp, and look as premium as your products.">
+<meta property="og:url" content="https://happinessisfreee.online/website-for-hair-vendors.html">
+<meta property="og:image" content="https://happinessisfreee.online/portfolio/onyiicoshine.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Website for Hair Vendors in Nigeria | WebCraft Nigeria">
+<meta name="twitter:description" content="A custom website for your hair or wig business — showcase bundles by length, take orders on WhatsApp, and look as premium as your products.">
+<meta name="twitter:image" content="https://happinessisfreee.online/portfolio/onyiicoshine.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Epilogue:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#080810; --white:#f8f7f4; --accent:#00e5a0; --accent2:#0057ff;
+    --mid:#1a1a2e; --card:#111120; --muted:#bcbcda; --border:rgba(255,255,255,0.07);
+    --font-head:'Syne',sans-serif; --font-body:'Epilogue',sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--black); color:var(--white); font-family:var(--font-body);}
+  a{color:inherit; text-decoration:none;}
+  section{padding:80px 24px; max-width:1080px; margin:0 auto;}
+
+  nav{
+    position:sticky; top:0; z-index:50; display:flex; align-items:center; justify-content:space-between;
+    padding:20px 24px; background:rgba(8,8,16,0.88); backdrop-filter:blur(10px); border-bottom:1px solid var(--border);
+  }
+  .nav-logo{font-family:var(--font-head); font-weight:800; font-size:1.2rem; letter-spacing:-.02em;}
+  .nav-logo span{color:var(--accent);}
+  .nav-links{list-style:none; display:flex; gap:28px; align-items:center;}
+  .nav-links a{font-size:0.88rem; color:var(--muted);}
+  .nav-cta{background:var(--accent); color:var(--black)!important; padding:10px 18px; border-radius:6px; font-weight:700;}
+
+  .hero{text-align:center; padding-top:90px; padding-bottom:20px;}
+  .eyebrow{display:inline-block; font-size:0.75rem; letter-spacing:.12em; text-transform:uppercase; color:var(--accent); border:1px solid rgba(0,229,160,.3); border-radius:20px; padding:6px 16px; margin-bottom:22px;}
+  .hero h1{font-family:var(--font-head); font-weight:800; font-size:clamp(2.1rem,4.8vw,3.3rem); line-height:1.15;}
+  .hero h1 span{color:var(--accent);}
+  .hero p{max-width:580px; margin:20px auto 0; color:var(--muted); font-size:1.05rem; line-height:1.7;}
+  .btn-primary{background:var(--accent); color:var(--black); font-weight:700; padding:16px 32px; border-radius:6px; display:inline-block; font-size:.95rem; margin-top:30px;}
+
+  .pain-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:60px;}
+  .pain-card{background:var(--card); border:1px solid var(--border); border-radius:12px; padding:28px 24px;}
+  .pain-card .num{color:var(--accent); font-family:var(--font-head); font-weight:800; font-size:1.4rem;}
+  .pain-card h4{font-size:.95rem; margin:12px 0 8px;}
+  .pain-card p{color:var(--muted); font-size:.85rem; line-height:1.6;}
+
+  .example{margin-top:80px;}
+  .example h2{font-family:var(--font-head); font-size:clamp(1.5rem,3vw,2rem); text-align:center; margin-bottom:16px;}
+  .example p.sub{color:var(--muted); text-align:center; max-width:520px; margin:0 auto 40px;}
+  .example-grid{display:grid; grid-template-columns:1fr 1fr; gap:24px;}
+  .example-grid .browser-card:last-child:nth-child(odd){grid-column:1/-1; width:calc(50% - 12px); justify-self:center;}
+  .browser-card{background:var(--card); border:1px solid var(--border); border-radius:12px; overflow:hidden;}
+  .browser-bar{display:flex; align-items:center; gap:8px; padding:10px 14px; background:var(--mid); border-bottom:1px solid var(--border);}
+  .dot{width:9px;height:9px;border-radius:50%;}
+  .dot.r{background:#ff5f56;} .dot.y{background:#ffbd2e;} .dot.g{background:#27c93f;}
+  .browser-url{flex:1; font-size:.72rem; color:var(--muted); background:rgba(255,255,255,.05); border-radius:5px; padding:4px 10px; margin-left:8px;}
+  .browser-card img{width:100%; display:block;}
+
+  .features{margin-top:80px;}
+  .features h2{font-family:var(--font-head); font-size:clamp(1.5rem,3vw,2rem); text-align:center; margin-bottom:40px;}
+  .feat-list{display:grid; grid-template-columns:repeat(2,1fr); gap:18px;}
+  .feat-item{display:flex; gap:14px; align-items:flex-start;}
+  .feat-item .check{color:var(--accent); font-weight:700; font-size:1.1rem;}
+  .feat-item h4{font-size:.92rem; margin-bottom:4px;}
+  .feat-item p{color:var(--muted); font-size:.82rem; line-height:1.6;}
+
+  .cta-block{text-align:center; background:var(--card); border:1px solid var(--border); border-radius:16px; padding:60px 30px; margin-top:80px;}
+  .cta-block h2{font-family:var(--font-head); font-size:clamp(1.6rem,3.5vw,2.2rem); margin-bottom:14px;}
+  .cta-block p{color:var(--muted); max-width:460px; margin:0 auto 28px;}
+
+  footer{text-align:center; padding:50px 24px 70px; color:var(--muted); font-size:.85rem; border-top:1px solid var(--border);}
+  footer a{color:var(--accent);}
+
+  @media(max-width:720px){ .pain-grid,.feat-list,.example-grid{grid-template-columns:1fr;} .example-grid .browser-card:last-child:nth-child(odd){width:100%;} .nav-links{display:none;} }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Web<span>Craft</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="book-a-call.html" class="nav-cta">Schedule a Call</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <span class="eyebrow">For Hair &amp; Wig Vendors</span>
+  <h1>Sell hair like the <span>premium brand you are.</span></h1>
+  <p>Your hair is premium — your online presence should match. A real website makes it easy for customers to browse bundles by length, price, and texture, then order in seconds.</p>
+  <a href="book-a-call.html" class="btn-primary">Schedule a Call →</a>
+</section>
+
+<section>
+  <div class="pain-grid">
+    <div class="pain-card">
+      <div class="num">01</div>
+      <h4>Instagram DMs are impossible to keep up with</h4>
+      <p>A website answers the "how much for 20 inches" questions before they even message.</p>
+    </div>
+    <div class="pain-card">
+      <div class="num">02</div>
+      <h4>Customers can't compare lengths and prices easily</h4>
+      <p>A proper catalogue, sorted by length and texture, makes buying decisions faster.</p>
+    </div>
+    <div class="pain-card">
+      <div class="num">03</div>
+      <h4>You look the same as every other IG hair page</h4>
+      <p>A dedicated website instantly separates you from vendors who only exist on social media.</p>
+    </div>
+  </div>
+</section>
+
+<section class="example">
+  <h2>Here's what it looks like</h2>
+  <p class="sub">Real hair businesses we've built websites for.</p>
+  <div class="example-grid">
+    <div class="browser-card">
+      <div class="browser-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><div class="browser-url">onyiicoshinehairpalace</div></div>
+      <img src="portfolio/onyiicoshine.jpg" alt="Onyiicoshine Hair Palace website built by WebCraft Nigeria">
+    </div>
+    <div class="browser-card">
+      <div class="browser-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><div class="browser-url">luxuryhairbyosy</div></div>
+      <img src="portfolio/luxuryhair-osy.jpg" alt="Luxury Hair by Osy website built by WebCraft Nigeria">
+    </div>
+    <div class="browser-card">
+      <div class="browser-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><div class="browser-url">ririsluxuryhair</div></div>
+      <img src="portfolio/ririsluxuryhair.jpg" alt="Riri's Luxury Hair website built by WebCraft Nigeria">
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <h2>What's included</h2>
+  <div class="feat-list">
+    <div class="feat-item"><span class="check">✓</span><div><h4>Sort by length &amp; price</h4><p>Customers filter by inches, texture, or price — no more scrolling endless IG posts.</p></div></div>
+    <div class="feat-item"><span class="check">✓</span><div><h4>WhatsApp checkout</h4><p>Every product links straight into WhatsApp for a fast, familiar checkout.</p></div></div>
+    <div class="feat-item"><span class="check">✓</span><div><h4>Premium visual design</h4><p>Dark, gold-accented layouts that make your hair look as premium as it is.</p></div></div>
+    <div class="feat-item"><span class="check">✓</span><div><h4>Fast, mobile-first</h4><p>Most hair shoppers browse on their phones — the site is built for that first.</p></div></div>
+  </div>
+</section>
+
+<div class="cta-block">
+  <h2>See your hair business online — free</h2>
+  <p>There's no cost to get your website built. Book a call and let's talk about your catalogue.</p>
+  <a href="book-a-call.html" class="btn-primary">Schedule a Call →</a>
+</div>
+
+<footer>
+  <p>© 2026 WebCraft Nigeria. All rights reserved. &middot; <a href="https://wa.me/2349031375718">Chat on WhatsApp</a></p>
+</footer>
+
+</body>
+</html>

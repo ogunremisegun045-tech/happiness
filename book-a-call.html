@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Your Free Website Preview — WebCraft Nigeria</title>
+<meta name="description" content="Book a free call with WebCraft Nigeria and see exactly what your business website could look like — no payment, no obligation.">
+<link rel="canonical" href="https://happinessisfreee.online/book-a-call.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="WebCraft Nigeria">
+<meta property="og:title" content="Book Your Free Website Preview — WebCraft Nigeria">
+<meta property="og:description" content="Book a free call with WebCraft Nigeria and see exactly what your business website could look like — no payment, no obligation.">
+<meta property="og:url" content="https://happinessisfreee.online/book-a-call.html">
+<meta property="og:image" content="https://happinessisfreee.online/portfolio/mercyked.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Book Your Free Website Preview — WebCraft Nigeria">
+<meta name="twitter:description" content="Book a free call with WebCraft Nigeria and see exactly what your business website could look like — no payment, no obligation.">
+<meta name="twitter:image" content="https://happinessisfreee.online/portfolio/mercyked.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#080810; --panel:#0f0d14; --cream:#f8f7f4;
+    --mint:#00e5a0; --mint-dim:rgba(0,229,160,0.14);
+    --border:rgba(255,255,255,0.08);
+    --grey:rgba(248,247,244,0.6);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--ink); color:var(--cream);
+    font-family:'Epilogue',-apple-system,sans-serif;
+    overflow-x:hidden;
+  }
+  .mono{font-family:'Space Mono',monospace;}
+  a{color:inherit;}
+
+  /* ---- fluid ambient background ---- */
+  .blob{
+    position:fixed; border-radius:50%; filter:blur(90px);
+    opacity:0.16; pointer-events:none; z-index:0;
+  }
+  .blob-1{width:520px;height:520px;background:var(--mint);top:-160px;left:-140px;}
+  .blob-2{width:420px;height:420px;background:#5b7fff;bottom:-120px;right:-100px;opacity:0.1;}
+
+  section{position:relative;z-index:1;padding:100px 24px;max-width:1140px;margin:0 auto;}
+
+  nav{
+    position:sticky; top:0; z-index:50; display:flex; align-items:center; justify-content:space-between;
+    padding:20px 24px; background:rgba(8,8,16,0.85); backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--border);
+  }
+  .logo{font-weight:800; font-size:1.05rem; letter-spacing:0.02em;}
+  .logo span{color:var(--mint);}
+  nav a.back{font-size:0.82rem; color:var(--grey); text-decoration:none;}
+
+  .eyebrow{
+    display:inline-block; font-family:'Space Mono',monospace; font-size:0.72rem;
+    letter-spacing:0.12em; text-transform:uppercase; color:var(--mint);
+    border:1px solid rgba(0,229,160,0.3); border-radius:20px; padding:6px 14px; margin-bottom:22px;
+  }
+
+  /* ---- hero ---- */
+  .hero{text-align:center; padding-top:120px; padding-bottom:60px;}
+  .hero h1{
+    font-size:clamp(2.2rem,5.5vw,3.8rem); font-weight:800; line-height:1.08; letter-spacing:-0.01em;
+  }
+  .hero h1 em{font-style:normal; color:var(--mint);}
+  .hero p{
+    max-width:520px; margin:22px auto 0; color:var(--grey); font-size:1.05rem; line-height:1.7;
+  }
+  .hero-cta{margin-top:36px; display:flex; gap:14px; justify-content:center; flex-wrap:wrap;}
+  .btn-primary{
+    background:var(--mint); color:var(--ink); font-weight:700; padding:16px 30px;
+    border-radius:6px; text-decoration:none; font-size:0.92rem; border:none; cursor:pointer;
+    transition:transform 0.2s;
+  }
+  .btn-primary:hover{transform:translateY(-2px);}
+  .btn-ghost{
+    border:1px solid var(--border); color:var(--cream); padding:16px 30px; border-radius:6px;
+    text-decoration:none; font-size:0.92rem; transition:border-color 0.2s;
+  }
+  .btn-ghost:hover{border-color:var(--mint);}
+
+  /* ---- what to expect ---- */
+  .expect-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin-top:44px;}
+  .expect-item{
+    background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:20px 22px;
+    display:flex; gap:14px; align-items:flex-start;
+  }
+  .expect-item svg{width:20px;height:20px;flex-shrink:0;margin-top:2px;color:var(--mint);}
+  .expect-item p{color:var(--grey); font-size:0.9rem; line-height:1.5;}
+  .section-head{max-width:560px; margin-bottom:10px;}
+  .section-head h2{font-size:clamp(1.6rem,3.2vw,2.2rem); font-weight:800; line-height:1.2;}
+  .section-head p{color:var(--grey); margin-top:12px; font-size:0.98rem; line-height:1.6;}
+
+  /* ---- portfolio: browser-frame cards ---- */
+  .portfolio-grid{
+    display:grid; grid-template-columns:repeat(2,1fr); gap:26px; margin-top:48px;
+  }
+  .browser-card{
+    background:var(--panel); border:1px solid var(--border); border-radius:12px; overflow:hidden;
+  }
+  .browser-bar{
+    display:flex; align-items:center; gap:8px; padding:10px 14px; background:#151220;
+    border-bottom:1px solid var(--border);
+  }
+  .dot{width:9px;height:9px;border-radius:50%;}
+  .dot.r{background:#ff5f56;} .dot.y{background:#ffbd2e;} .dot.g{background:#27c93f;}
+  .browser-url{
+    flex:1; font-family:'Space Mono',monospace; font-size:0.72rem; color:var(--grey);
+    background:rgba(255,255,255,0.05); border-radius:5px; padding:4px 10px; margin-left:8px;
+    overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  }
+  .browser-card img{width:100%; display:block; aspect-ratio:960/418; object-fit:cover; object-position:top;}
+  .browser-cap{padding:16px 18px;}
+  .browser-cap h4{font-size:0.95rem; font-weight:700;}
+  .browser-cap span{font-size:0.8rem; color:var(--grey);}
+
+  /* ---- trust strip ---- */
+  .trust-strip{
+    display:flex; justify-content:center; gap:36px; flex-wrap:wrap; margin-top:50px;
+    padding:26px; background:var(--mint-dim); border:1px solid rgba(0,229,160,0.25); border-radius:12px;
+  }
+  .trust-strip span{font-family:'Space Mono',monospace; font-size:0.78rem; color:var(--cream); position:relative; padding-left:16px;}
+  .trust-strip span::before{content:'';position:absolute;left:0;top:6px;width:6px;height:6px;border-radius:50%;background:var(--mint);}
+
+  /* ---- booking form ---- */
+  .form-wrap{
+    background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:44px;
+    margin-top:0px;
+  }
+  .form-row{margin-bottom:18px;}
+  .form-row-split{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:18px;}
+  label{display:block; font-size:0.82rem; color:var(--grey); margin-bottom:8px;}
+  input, select, textarea{
+    width:100%; background:rgba(255,255,255,0.05); border:1px solid var(--border); border-radius:8px;
+    padding:13px 14px; color:var(--cream); font-size:0.92rem; font-family:inherit; outline:none;
+    transition:border-color 0.2s;
+  }
+  input:focus, select:focus, textarea:focus{border-color:var(--mint);}
+  .form-note{font-size:0.78rem; color:var(--grey); margin-top:6px; line-height:1.5;}
+
+  footer{
+    text-align:center; padding:50px 24px 70px; color:var(--grey); font-size:0.85rem;
+  }
+  footer a{color:var(--mint); text-decoration:none;}
+
+  [data-reveal]{opacity:0; transform:translateY(28px); transition:opacity 0.7s ease, transform 0.7s ease;}
+  [data-reveal].reveal-in{opacity:1; transform:translateY(0);}
+
+  @media (max-width:720px){
+    .expect-grid, .portfolio-grid, .form-row-split{grid-template-columns:1fr;}
+    section{padding:70px 20px;}
+    .hero{padding-top:80px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="blob blob-1"></div>
+<div class="blob blob-2"></div>
+
+<nav>
+  <div class="logo">WEBCRAFT <span>NIGERIA</span></div>
+  <a href="index.html" class="back">← Back to site</a>
+</nav>
+
+<section class="hero">
+  <span class="eyebrow mono">Free · No Payment · No Commitment</span>
+  <h1 data-reveal>Let's get your <em>free preview</em><br>started.</h1>
+  <p data-reveal>A short call, one time. I'll ask about your business and Instagram page, then show you exactly what your website will look like.</p>
+  <div class="hero-cta" data-reveal>
+    <a href="#book" class="btn-primary">Book My Free Call →</a>
+    <a href="#portfolio" class="btn-ghost">See Real Examples</a>
+  </div>
+</section>
+
+<section id="expect">
+  <div class="section-head" data-reveal>
+    <span class="eyebrow mono">On The Call</span>
+    <h2>What to expect.</h2>
+  </div>
+  <div class="expect-grid">
+    <div class="expect-item" data-reveal>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+      <p>Takes about 10 minutes — no long meeting, just enough to get started.</p>
+    </div>
+    <div class="expect-item" data-reveal>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+      <p>I'll ask about your business and pull products straight from your Instagram page.</p>
+    </div>
+    <div class="expect-item" data-reveal>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+      <p>You'll leave knowing exactly what your site will look like, and when it'll be ready.</p>
+    </div>
+    <div class="expect-item" data-reveal>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+      <p>No payment, no pressure — just a look at what's possible for your business.</p>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <div class="section-head" data-reveal>
+    <span class="eyebrow mono">Real Client Sites</span>
+    <h2>8 Nigerian businesses, now online.</h2>
+    <p>From hair vendors to bakeries to fabric dealers — every site below is live and built the same way yours will be.</p>
+  </div>
+  <div class="portfolio-grid">
+    <div class="browser-card" data-reveal>
+      <div class="browser-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><div class="browser-url mono">onyiicoshinehairpalace</div></div>
+      <img src="portfolio/onyiicoshine.jpg" alt="Onyiicoshine Hair Palace website">
+      <div class="browser-cap"><h4>Onyiicoshine Hair Palace</h4><span>Wigs & lace units</span></div>
+    </div>
+    <div class="browser-card" data-reveal>
+      <div class="browser-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><div class="browser-url mono">luxuryhairbyosy</div></div>
+      <img src="portfolio/luxuryhair-osy.jpg" alt="Luxury Hair by Osy website">
+      <div class="browser-cap"><h4>Luxury Hair by Osy</h4><span>Hair bundles, sold by length</span></div>
+    </div>
+    <div class="browser-card" data-reveal>
+      <div class="browser-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><div class="browser-url mono">1cjhairs</div></div>
+      <img src="portfolio/cj-hairs.jpg" alt="1CJ Hairs website">
+      <div class="browser-cap"><h4>1CJ Hairs</h4><span>Bone straight & colour units</span></div>
+    </div>
+    <div class="browser-card" data-reveal>
+      <div class="browser-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><div class="browser-url mono">bjbbakery.netlify.app</div></div>
+      <img src="portfolio/bjb-bakery.jpg" alt="BJB Bakery's website">
+      <div class="browser-cap"><h4>BJB Bakery's</h4><span>Fresh bread, Ogun & Lagos</span></div>
+    </div>
+    <div class="browser-card" data-reveal>
+      <div class="browser-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><div class="browser-url mono">mercykedcollections.store</div></div>
+      <img src="portfolio/mercyked.jpg" alt="Mercyked Collections website">
+      <div class="browser-cap"><h4>Mercyked Collections</h4><span>Aso-ebi fabrics, Idumota</span></div>
+    </div>
+    <div class="browser-card" data-reveal>
+      <div class="browser-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><div class="browser-url mono">victoriousluxuryhairs.netlify.app</div></div>
+      <img src="portfolio/victory-hair.jpg" alt="Victory Hair World website">
+      <div class="browser-cap"><h4>Victory Hair World</h4><span>Raw hair & bone straight</span></div>
+    </div>
+    <div class="browser-card" data-reveal>
+      <div class="browser-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><div class="browser-url mono">julzluxuryhairs.netlify.app</div></div>
+      <img src="portfolio/julz-luxury.jpg" alt="Julz Luxury Hairs website">
+      <div class="browser-cap"><h4>Julz Luxury Hairs</h4><span>Hand-finished raw units</span></div>
+    </div>
+    <div class="browser-card" data-reveal>
+      <div class="browser-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><div class="browser-url mono">kaygeorgefabricsenterprises.netlify.app</div></div>
+      <img src="portfolio/kaygeorge.jpg" alt="Kaygeorge Fabrics Enterprises website">
+      <div class="browser-cap"><h4>Kaygeorge Fabrics</h4><span>Beaded & crystal lace</span></div>
+    </div>
+  </div>
+
+  <div class="trust-strip" data-reveal>
+    <span class="mono">No payment until you love it</span>
+    <span class="mono">Live within 24hrs of go-ahead</span>
+    <span class="mono">3 new clients per week</span>
+  </div>
+</section>
+
+<section id="book">
+  <div class="section-head" data-reveal>
+    <span class="eyebrow mono">Last Step</span>
+    <h2>Book your free call.</h2>
+    <p>Fill this in and I'll confirm a time with you directly on WhatsApp.</p>
+  </div>
+
+  <div class="form-wrap" data-reveal>
+    <form id="bookForm">
+      <div class="form-row-split">
+        <div class="form-row">
+          <label>Phone Number (WhatsApp)</label>
+          <input type="tel" id="bPhone" required placeholder="e.g. 0803 000 0000">
+        </div>
+        <div class="form-row">
+          <label>Email Address</label>
+          <input type="email" id="bEmail" required placeholder="e.g. amaka@email.com">
+        </div>
+      </div>
+      <div class="form-row">
+        <label>Business Name / Instagram</label>
+        <input type="text" id="bBusiness" required placeholder="e.g. @amakas_closet">
+      </div>
+      <p class="form-note">Submitting sends your details to WhatsApp so we can confirm a time together — no payment or commitment at this stage.</p>
+      <div style="margin-top:24px;">
+        <button type="submit" class="btn-primary" style="width:100%;">Book My Free Call →</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer data-reveal>
+  <p>Prefer to just message instead? <a href="https://wa.me/2349031375718">Chat on WhatsApp →</a></p>
+</footer>
+
+<script src="js/faq-bot.js"></script>
+<script>
+  // Prefill email from ?email= param if arriving from a nurture email link
+  const params = new URLSearchParams(window.location.search);
+  const prefillEmail = params.get('email');
+  if (prefillEmail) {
+    document.getElementById('bEmail').value = decodeURIComponent(prefillEmail);
+  }
+
+  // Staggered scroll reveal
+  function setupScrollReveal() {
+    const els = document.querySelectorAll('[data-reveal]');
+    let i = 0;
+    const parentCounts = new Map();
+    els.forEach(el => {
+      const parent = el.parentElement;
+      const count = parentCounts.get(parent) || 0;
+      if (count < 8) el.style.transitionDelay = `${count * 80}ms`;
+      parentCounts.set(parent, count + 1);
+      i++;
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('reveal-in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    els.forEach(el => observer.observe(el));
+  }
+  document.addEventListener('DOMContentLoaded', setupScrollReveal);
+
+  // Form submit: tag as client, build WhatsApp message, redirect
+  document.getElementById('bookForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const phone = document.getElementById('bPhone').value;
+    const email = document.getElementById('bEmail').value;
+    const business = document.getElementById('bBusiness').value;
+
+    // Tag this contact as 'client' in GetResponse — this is what stops
+    // the nurture email sequence, since the workflow checks for this tag.
+    // Fire-and-forget with keepalive:true so the request survives the
+    // navigation below — we never await it, so it can never hang the button.
+    try {
+      fetch('/.netlify/functions/automation', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: 'mark_client', email, phone }),
+        keepalive: true,
+      }).catch(err => console.log('mark_client call failed:', err));
+    } catch (err) {
+      console.log('mark_client call failed:', err);
+      // Don't block the booking flow if this fails — WhatsApp handoff still matters most
+    }
+
+    const message = `Hi Emmanuel, I'd like to book my free website preview call.\n\n` +
+      `Phone: ${phone}\nEmail: ${email}\nBusiness/Instagram: ${business}\n\nLooking forward to it!`;
+
+    const waUrl = `https://wa.me/2349031375718?text=${encodeURIComponent(message)}`;
+    sessionStorage.setItem('waUrl', waUrl);
+    window.location.href = 'thank-you.html';
+  });
+</script>
+</body>
+</html>
